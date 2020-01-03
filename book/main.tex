@@ -9,9 +9,14 @@
 %\usepackage{wasysym}
 %\let\int\varint
 % Возможность вставки картинок
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 % Путь до директории с картинками
-%\graphicspath{{images/}}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.png,.jpg}
+
+%\usepackage{xcolor}
+\usepackage{hyperref}
+%\definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
 
 \begin{document}
 \title{Функции Ферми-Дирака}
@@ -21,11 +26,9 @@
 % \input{other.tex} - включение других tex-файлов
 % TODO:
 % * Разобраться с пустыми страницами после каждой главы
-% * Выяснить, как ставится умножение
 % * Добавление рисунков с подписями
 % * Верстка таблиц
 % * Верстка полей
-% * Автоматическая нумерация формул
 % * Добавить абзацный отступ параграфу
 % * Список литературы
 % Содержание
@@ -42,6 +45,8 @@
 \include{ch5/chapter5}
 
 \include{ch6/chapter6}
+
+\include{literature}
 
 \end{document}
 
